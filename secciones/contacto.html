@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/M-Archivo-logos-Blanco.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos/style.css">
+  <title>Modula Estudio</title>
+</head>
+
+<body class="grilla" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+    
+            
+    <header>
+
+      <div class="brand">
+          <img class="logoE" src="./img/M-Archivo logos-Blanco.jpg" alt="logo estudio">
+          <h1 class="nombre">Modula Estudio </h1>
+      </div>
+          
+      <nav >
+          <ul> 
+              <li>
+                  <a href="../index.html">Home</a>
+               </li>
+                      
+              <li>
+                <a href="nosotros.html">Nosotros</a>
+              </li>
+                      
+              <li>
+                  <a href="proyectos.html">Proyectos</a>
+              </li>
+                      
+              <li>
+                  <a href="contacto.html">Contacto</a>
+              </li>
+          </ul>
+      </nav>
+
+    </header>
+    
+    <main class="contactMain">
+         
+        <h2 class="formTitle1">Contanos tu proyecto!</h2>
+      
+        <div class="contactForm">
+      
+          <h2 class="formTitle2">Formulario de contacto</h1>
+          <h3 class="formSub">Escríbenos tu consulta!</h3>
+      
+          <form action="submeter-formulario.php" method="post">       
+      
+            <p>
+              <label for="nombre" class="colocar_nombre">Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            </p>
+                    
+            <p>
+              <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+            </p>
+                  
+            <p>
+              <label for="telefone" class="colocar_telefono">Teléfono
+              </label>
+              <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>    
+              
+            <p>
+              <label for="mensaje" class="colocar_mensaje">Mensaje
+                <span class="obligatorio">*</span>
+              </label>                            
+              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu consulta"></textarea> 
+            </p>  
+            
+            <p>
+              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+              <p class="aviso">
+              <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>          
+                  
+          </form>
+
+        </div>
+  
+    </main>
+    
+   
+    <footer>
+        <h4>Todos los derechos reservados a @ModulaEstudio</h4>
+        <h4>Copyright © Modula Estudio 2022</h4>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>

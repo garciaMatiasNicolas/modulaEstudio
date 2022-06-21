@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+    grid-template-rows: 10% 12fr 15%;
+    grid-template-columns: 100%;
+    background-color: white;
+    gap: 2rem;
+}
+
+.logoE{
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.fl{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.nombre{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: black ;
+    font-size: 3rem;
+
+}
+
+.size{
+    width: 7rem;
+    height: 6rem;
+}
+
+.grillaIndex{
+grid-area: main;
+display: grid;
+grid-template-areas:
+"img"
+"div" ;
+grid-template-rows: 70% 30%;
+margin-left: 15%;
+margin-right: 15%;
+gap: 2rem;
+}
+
+.grillaProy{
+
+}
+
+.fondo{
+    grid-area: img ;
+}
+
+.size2{
+    height: 100%;
+    width: 100%
+}
+
+.contacto{
+    grid-area: div;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.infoContact{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info{
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black ;
+    font-size: medium
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.contactForm{
+    width: auto;
+    height: 100%;
+}
+
+.formTitle1{
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.formTitle2{
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.formSub{
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+ footer{
+    grid-area: footer; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: rgb(35, 35, 35);
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: white ;
+    margin-left: 10px;
+}
+
