@@ -27,9 +27,6 @@
       <div class="collapse navbar-collapse fl" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
@@ -44,26 +41,27 @@
   </nav>
     
     <main class="grillaIndex">
-      <div  class="formulario">
-        <form action="">
+      <div>
+        <form class="formulario" action="">
           <h2>Envianos tu consulta!</h2>
           <div class="cajaTexto">
             <label for="nombre"></label>
-            <input type="text" name="nombre" placeholder="Nombre...">
+            <input type="text" name="nombre" placeholder="Tu nombre...">
           </div>
           <div class="cajaTexto">
             <label for="apellido"></label>
-            <input type="text" name="apellido" placeholder="Apellido...">
+            <input type="text" name="apellido" placeholder="Tu apellido...">
           </div>
           <div class="cajaTexto">
             <label for="email"></label>
-            <input type="email" name="email" placeholder="E-mail...">
+            <input type="email" name="email" placeholder="Tu E-mail...">
           </div>
           <div class="cajaTexto">
             <label for="numero"></label>
-            <input type="number" name="numero" placeholder="Telefono...">
+            <input type="tel" name="numero" placeholder="Tu celular...">
           </div>
           <div class="cajaTexto">
+            <label for="numero"></label>
             <textarea name="consulta" id="" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
           </div>
 
@@ -77,8 +75,8 @@
     
    
     <footer>
-        <h4>Todos los derechos reservados a @ModulaEstudio</h4>
-        <h4>Copyright © Modula Estudio 2022</h4>
+        <h4 class="fText">Todos los derechos reservados a @ModulaEstudio</h4>
+        <h4 class="fText">Copyright © Modula Estudio 2022</h4>
     </footer>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
