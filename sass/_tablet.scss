@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+/*tablet*/
+
+@media(min-width:500px){
+    .fotoArq{
+        width:50% ;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .letra{
+        font-family: 'Poppins', sans-serif;
+        font-size: 80%;
+        color: black;
+        font-weight: 300;
+    }
+}
+
+@media(min-width:600px) {
+    
+    .grillaNos{
+        display: grid;
+        grid-template-areas:
+        "nav"
+        "main2"
+        "footer";
+        grid-template-rows: 5% 90% 5%;
+        grid-template-columns: 100%;
+        background-color: white;
+        gap: 4rem;
+    }
+
+    .grillaIndex{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "img"
+        "div" ;
+        grid-template-rows: 70% 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        gap: 2rem ;
+        }
+
+    .size{
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .manifestoCont{
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+    }
+    
+    .manifestoCont1{
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .manifestoCont2{
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    
+    .manifesto{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(128, 128, 128, 0.059);
+        border-radius: 5px;
+    }
+    
+    .manifesto1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .manifesto2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+    }
+    
+    .letra{
+        font-family: 'Poppins', sans-serif;
+        font-size: 80%;
+        color: black;
+        font-weight: 300;
+    }
+
+    .quienes{
+        font-family: 'Poppins', sans-serif;
+        font-size: xx-large;
+        color: black;
+        font-weight: 300;
+        margin-left: 18px;
+    }
+    
+    .parrafo{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+
+    .parrafo1{
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    
+    
+    .fotoArq{
+        width:50% ;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .presentacion{
+        width: 80%;
+    }
+
+    .presentacion1{
+        width: 80%;
+    }
+    
+}
+
+@media(min-width:768px){
+
+    .grillaIndex{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "img"
+        "div" ;
+        grid-template-rows: 70% 30%;
+        margin-left: 10%;
+        margin-right: 10%;
+        gap: 5rem ;
+        }
+
+
+    .formulario{
+        width: 488px;
+        margin: auto;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 7px;
+        background-color: black;
+    }
+
+    .size2{
+        height: 90%;
+        width: 100%;
+    }
+
+    .text{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: black ;
+        font-size: larger
+    }
+
+    .manifestoCont1{
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .manifestoCont2{
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .letra{
+        font-family: 'Poppins', sans-serif;
+        font-size: 100%;
+        color: black;
+        font-weight: 300;
+    }
+
+    .fotoArq{
+        width:70% ;
+        height: 80%;
+        border-radius: 5px;
+    }
+}

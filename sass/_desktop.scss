@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+/*desktop*/
+
+@media(min-width:1024px){
+    
+    
+    .parrafo{
+        width: 50%;
+        height: 50%;
+        margin-left: 18px;
+      
+    }
+
+    .parrafo1{
+        width: 50%;
+        height: 50%;
+        margin-right: 18px;
+        text-align: right;
+    }
+    
+    .fotoArq{
+        width:410px ;
+        height: 80%;
+        border-radius: 5px;
+    }
+
+    .presentacion1{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+

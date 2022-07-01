@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+/*smartphone*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+  grid-template-rows: 10% 12fr 15%;
+  grid-template-columns: 100%;
+  background-color: white;
+  gap: 5rem;
+}
+
+.grillaNos {
+  display: grid;
+  grid-template-areas: "nav" "main2" "footer";
+  grid-template-rows: 5% 90% 5%;
+  grid-template-columns: 100%;
+  background-color: white;
+  gap: 2rem;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.fl {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.nombre {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 2rem;
+}
+
+.size {
+  width: 0;
+  height: 0;
+  margin-right: 15px;
+}
+
+main {
+  grid-area: main2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.grillaIndex {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: "img" "div";
+  grid-template-rows: 70% 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.fondo {
+  grid-area: img;
+}
+
+.size2 {
+  height: 80%;
+  width: 100%;
+}
+
+.contacto {
+  grid-area: div;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.infoContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: smaller;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+.manifestoCont {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.manifestoCont1 {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.manifestoCont2 {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.manifesto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(128, 128, 128, 0.059);
+  border-radius: 5px;
+}
+
+.manifesto1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
+}
+
+.manifesto2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.quienes {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: black;
+  font-weight: 300;
+  font-size: larger;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.presentacion {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.presentacion1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.parrafo {
+  width: 90%;
+  height: 50%;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.parrafo1 {
+  width: 90%;
+  height: 50%;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.letra {
+  font-family: "Poppins", sans-serif;
+  font-size: 70%;
+  color: black;
+  font-weight: 300;
+}
+
+.fotoArq {
+  width: 8rem;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.formulario {
+  width: 100%;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: black;
+}
+
+.cajaTexto {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 80%;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: aliceblue;
+  font-size: 3rem;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-color: rgb(35, 35, 35);
+}
+
+.fText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-left: 10px;
+  font-size: medium;
+}
+
+/*tablet*/
+@media (min-width: 500px) {
+  .fotoArq {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .letra {
+    font-family: "Poppins", sans-serif;
+    font-size: 80%;
+    color: black;
+    font-weight: 300;
+  }
+}
+@media (min-width: 600px) {
+  .grillaNos {
+    display: grid;
+    grid-template-areas: "nav" "main2" "footer";
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: 100%;
+    background-color: white;
+    gap: 4rem;
+  }
+
+  .grillaIndex {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "img" "div";
+    grid-template-rows: 70% 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 2rem;
+  }
+
+  .size {
+    width: 7rem;
+    height: 6rem;
+  }
+
+  .manifestoCont {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .manifestoCont1 {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .manifestoCont2 {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .manifesto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(128, 128, 128, 0.059);
+    border-radius: 5px;
+  }
+
+  .manifesto1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+  }
+
+  .manifesto2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+  }
+
+  .letra {
+    font-family: "Poppins", sans-serif;
+    font-size: 80%;
+    color: black;
+    font-weight: 300;
+  }
+
+  .quienes {
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    color: black;
+    font-weight: 300;
+    margin-left: 18px;
+  }
+
+  .parrafo {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .parrafo1 {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .fotoArq {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .presentacion {
+    width: 80%;
+  }
+
+  .presentacion1 {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .grillaIndex {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "img" "div";
+    grid-template-rows: 70% 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 5rem;
+  }
+
+  .formulario {
+    width: 488px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: black;
+  }
+
+  .size2 {
+    height: 90%;
+    width: 100%;
+  }
+
+  .text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: larger;
+  }
+
+  .manifestoCont1 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .manifestoCont2 {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .letra {
+    font-family: "Poppins", sans-serif;
+    font-size: 100%;
+    color: black;
+    font-weight: 300;
+  }
+
+  .fotoArq {
+    width: 70%;
+    height: 80%;
+    border-radius: 5px;
+  }
+}
+/*desktop*/
+@media (min-width: 1024px) {
+  .parrafo {
+    width: 50%;
+    height: 50%;
+    margin-left: 18px;
+  }
+
+  .parrafo1 {
+    width: 50%;
+    height: 50%;
+    margin-right: 18px;
+    text-align: right;
+  }
+
+  .fotoArq {
+    width: 410px;
+    height: 80%;
+    border-radius: 5px;
+  }
+
+  .presentacion1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=estilos.css.map */
