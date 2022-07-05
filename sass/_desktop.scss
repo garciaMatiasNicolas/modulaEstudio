@@ -3,6 +3,49 @@
 /*desktop*/
 
 @media(min-width:1024px){
+
+    .redes{
+        margin-top: 2rem;
+        height: 50%;
+        width: 100%;
+    
+        .infoContact{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+        
+            .contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        
+            .title1{  
+                color: black;
+                font-family: 'Poppins', sans-serif;
+                font-size: 130% ;
+                font-weight: 600;}
+        
+            .title{
+                color: black;
+                font-family: 'Poppins', sans-serif;
+                font-size: 100% ;
+                font-weight: 600;
+            }
+        
+            .info{
+                color: black;
+                font-family: 'Poppins', sans-serif;
+                font-size: 100% ;
+                font-weight: 300;
+        
+            }
+        }
+    
+    }
     
     
     .parrafo{
