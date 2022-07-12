@@ -58,17 +58,6 @@
 }
 
 @media(min-width:600px) {
-    .grilla{
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "main2"
-        "footer";
-        grid-template-rows: 10% 90% 15%;
-        grid-template-columns: 100%;
-        background-color: white;
-        gap: 2rem;
-    }
 
     .grillaPr{
         display: grid;
