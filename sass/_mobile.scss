@@ -21,18 +21,6 @@
    
 }
 
-.grillaPr{
-    display: grid;
-    grid-template-areas:
-    "nav"
-    "main2"
-    "footer";
-    grid-template-rows: 3% 90% 7%;
-    grid-template-columns: 100%;
-    background-color: white;
-    gap: 3rem;
-}
-
 .redes{
     height: 50%;
     width: 100%;
@@ -88,25 +76,9 @@
    
 }
 
-   
-
-.grillaNos{
-    display: grid;
-    grid-template-areas:
-    "nav"
-    "main2"
-    "footer";
-    grid-template-rows: 5% 90% 20%;
-    grid-template-columns: 100%;
-    background-color: white;
-    gap: 2rem;
-}
-
-
-
 
 nav{
-    grid-area: nav;
+   
    
     .fl{
         display: flex;
@@ -130,19 +102,20 @@ nav{
 }
 
 main{
-    grid-area: main2;
     display: flex ;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     margin-left: 5%;
     margin-right: 5%;
-    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
 }
 
 .size2{
-    height: 80%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
 }
 
 .text{
@@ -338,6 +311,7 @@ main{
     width:8rem ;
     height: 50%;
     border-radius: 5px;
+
 }
 
 .sectionForm{
@@ -370,26 +344,75 @@ main{
 }
 
 .wpp-container{
-    background-color: #2e6329;
-    border: 0.5px ridge rgba(0, 0, 0, 0.535);
+    background-color: #fff;
     position: sticky;
     z-index: 999;
     border-radius: 50%;
     bottom: 25px;
     top: 80%;
-    left: 90%;
+    left: 80%;
     padding: 15px;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height:75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover{
         transform: scale(1.1);
-        transition: 0.3s;
-        background-color: #fff;
+        transition: ease-in-out 0.3s;
+        border: 0.5px ridge rgba(0, 0, 0, 0.535);
     }
     .btn-wpp{
-        width: 3rem;
+        width: 5rem;
+      
     }
 }
+
+.proyecto1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    
+    .proyect1{
+        width: 50%;
+        height: 10fr;
+        display: grid ;
+        grid-template-areas: "img1 img3"
+                            "img1  img2"
+                                        ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 5fr 5fr;
+        
+        .img1{
+            grid-area: img1;
+            border: 1px black solid;
+        }
+        
+        .img2{
+            grid-area: img2;
+            border: 1px black solid;
+         
+        }
+        
+        .img3{
+            grid-area: img3;
+            border: 1px black solid;
+         
+        }
+        
+        
+    }
+
+    .descripcion{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+
 
 .cajaTexto{
     width: 100%;
@@ -411,31 +434,12 @@ input, textarea{
 }
 
 footer{
-    grid-area: footer; 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
-
-    .navFooter{
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border-right: 1px aliceblue solid;
-        padding-right: 15px;
-    }
 
     .fText{
         font-family:'Poppins', sans-serif;
         font-weight: 400;
         color:aliceblue;
-        font-size: smaller;
-        margin-top: 1rem;
-        margin-left: 1rem;
+        font-size: large;
     }
 }
 

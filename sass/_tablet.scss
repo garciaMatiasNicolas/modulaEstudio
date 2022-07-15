@@ -59,30 +59,6 @@
 
 @media(min-width:600px) {
 
-    .grillaPr{
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "main2"
-        "footer";
-        grid-template-rows: 5% 90% 10%;
-        grid-template-columns: 100%;
-        background-color: white;
-        gap: 1rem;
-    }
-    
-    .grillaNos{
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "main2"
-        "footer";
-        grid-template-rows: 5% 90% 15%;
-        grid-template-columns: 100%;
-        background-color: white;
-        gap: 4rem;
-    }
-
     .size{
         width: 7rem;
         height: 6rem;
@@ -192,6 +168,31 @@
 
 @media(min-width:768px){
 
+    .wpp-container{
+        background-color: #fff;
+        position: sticky;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 25px;
+        top: 80%;
+        left: 90%;
+        padding: 15px;
+        width: 75px;
+        height:75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            transform: scale(1.1);
+            transition: ease-in-out 0.3s;
+            border: 0.5px ridge rgba(0, 0, 0, 0.535);
+        }
+        .btn-wpp{
+            width: 5rem;
+          
+        }
+    }
+
     .formulario{
         width: 488px;
         margin: auto;
@@ -201,16 +202,12 @@
         background-color: black;
     }
 
-    .size2{
-        height: 90%;
-        width: 100%;
-    }
 
     .text{
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         color: black ;
-        font-size: larger
+        font-size:x-large
     }
 
     .manifestoCont1{
