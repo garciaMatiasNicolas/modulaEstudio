@@ -55,6 +55,13 @@
     border-bottom: 0.5px ridge rgba(0, 0, 0, 0.287);
     margin-left: 4%;
     margin-right: 4%;
+    .lista{
+        margin-right: 93%;
+        &:hover{
+            border-bottom: 0.5px ridge rgba(0, 0, 0, 0.287);
+            transition:  1s;
+        }
+    }
 }
 
 
@@ -126,10 +133,6 @@ main{
     gap: 2rem;
 }
 
-.size2{
-    height: 70%;
-    width: 70%;
-}
 
 .text{
     font-family: 'Poppins', sans-serif;

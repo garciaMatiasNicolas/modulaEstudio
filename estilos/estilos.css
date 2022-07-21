@@ -47,6 +47,13 @@
   margin-left: 4%;
   margin-right: 4%;
 }
+.menu .lista {
+  margin-right: 93%;
+}
+.menu .lista:hover {
+  border-bottom: 0.5px ridge rgba(0, 0, 0, 0.287);
+  transition: 1s;
+}
 
 .redes {
   height: 50%;
@@ -107,11 +114,6 @@ main {
   margin-top: 2rem;
   margin-bottom: 2rem;
   gap: 2rem;
-}
-
-.size2 {
-  height: 70%;
-  width: 70%;
 }
 
 .text {
