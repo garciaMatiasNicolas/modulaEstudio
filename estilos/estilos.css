@@ -7,13 +7,45 @@
   padding: 0;
 }
 
-.grillaCon {
-  display: grid;
-  grid-template-areas: "nav" "main2" "footer";
-  grid-template-rows: 5% 90% 25%;
-  grid-template-columns: 100%;
-  background-color: white;
-  gap: 0.5rem;
+.navStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+.navStyle .size {
+  width: 9rem;
+  height: 8rem;
+}
+.navStyle .size2 {
+  width: 8rem;
+  height: 7rem;
+}
+.navStyle .togglerStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 3rem;
+  padding: 0;
+}
+.navStyle .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navStyle .navFont {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.menu {
+  border-bottom: 0.5px ridge rgba(0, 0, 0, 0.287);
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .redes {
@@ -35,7 +67,7 @@
   align-items: flex-start;
 }
 .redes .infoContact .title1 {
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
   font-size: 130%;
   font-weight: 600;
@@ -63,24 +95,6 @@
 }
 .carrusel .fondo {
   border-radius: 10px;
-}
-
-nav .fl {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-nav .nombre {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  color: black;
-  font-size: 2rem;
-}
-
-.size {
-  width: 0;
-  height: 0;
-  margin-right: 15px;
 }
 
 main {
@@ -323,6 +337,7 @@ main {
   top: 80%;
   left: 80%;
   padding: 15px;
+  margin: 0;
   width: 75px;
   height: 75px;
   display: flex;
@@ -389,15 +404,72 @@ input, textarea {
   font-size: 1.5rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.881);
+}
+footer .fContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+footer .fContainer .fContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .fContainer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+footer .fContainer2 {
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+footer .fP {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: aliceblue;
+  font-size: small;
+}
 footer .fText {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: aliceblue;
-  font-size: large;
+  font-size: larger;
 }
 
 /*tablet*/
 @media (min-width: 500px) {
+  .navStyle .togglerStyle {
+    width: 15rem;
+  }
+  .navStyle .navFont {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+  }
   .proyects {
     width: 100%;
     display: flex;
@@ -444,10 +516,6 @@ footer .fText {
   }
 }
 @media (min-width: 600px) {
-  .size {
-    width: 7rem;
-    height: 6rem;
-  }
   .manifestoCont {
     width: 100%;
     height: 15rem;
@@ -531,6 +599,24 @@ footer .fText {
   .presentacion1 {
     width: 80%;
   }
+  footer .fContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-right: 5.5%;
+    margin-left: 5.5%;
+  }
+  footer .fContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-right: 5.5%;
+    margin-left: 5.5%;
+  }
 }
 @media (min-width: 768px) {
   .wpp-container {
@@ -548,6 +634,7 @@ footer .fText {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   .wpp-container:hover {
     transform: scale(1.1);
@@ -598,6 +685,18 @@ footer .fText {
     width: 70%;
     height: 80%;
     border-radius: 5px;
+  }
+  footer .fP {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+    font-size: medium;
+  }
+  footer .fText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: aliceblue;
+    font-size: x-large;
   }
 }
 /*desktop*/
