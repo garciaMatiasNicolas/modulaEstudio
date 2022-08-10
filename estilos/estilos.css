@@ -144,6 +144,16 @@ main .imgIndex .sizeServ {
   justify-content: space-around;
   align-items: flex-start;
 }
+.manifestoCont .manifesto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(128, 128, 128, 0.059);
+  border-radius: 5px;
+}
 
 .manifestoCont1 {
   width: 100%;
@@ -154,6 +164,14 @@ main .imgIndex .sizeServ {
   align-items: flex-start;
   gap: 1rem;
 }
+.manifestoCont1 .manifesto1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
+}
 
 .manifestoCont2 {
   width: 100%;
@@ -162,6 +180,14 @@ main .imgIndex .sizeServ {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
+}
+.manifestoCont2 .manifesto2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 80%;
 }
 
 .manifest {
@@ -225,35 +251,6 @@ main .imgIndex .sizeServ {
   opacity: 2;
 }
 
-.manifesto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 100%;
-  height: 80%;
-  background-color: rgba(128, 128, 128, 0.059);
-  border-radius: 5px;
-}
-
-.manifesto1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 100%;
-  height: 80%;
-}
-
-.manifesto2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
-  height: 80%;
-}
-
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -285,6 +282,57 @@ main .imgIndex .sizeServ {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.imgSize {
+  width: 100%;
+  height: 30%;
+}
+
+.sizeImg3 {
+  width: 95%;
+  height: 66%;
+  background-image: url(../img/inicio1.jpg);
+  background-size: 100% 100%;
+}
+
+.info2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.869);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sizeImg3:hover .info2 {
+  opacity: 2;
+}
+
+.sizeImg2 {
+  width: 100%;
+  height: 32%;
+  background-image: url(../img/fondoP.jpg);
+  background-size: 100% 100%;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.869);
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sizeImg2:hover .info {
+  opacity: 2;
 }
 
 .parrafo {
@@ -543,24 +591,7 @@ footer .fText {
     justify-content: space-around;
     align-items: flex-start;
   }
-  .manifestoCont1 {
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .manifestoCont2 {
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
-  .manifesto {
+  .manifestoCont .manifesto {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -570,7 +601,16 @@ footer .fText {
     background-color: rgba(128, 128, 128, 0.059);
     border-radius: 5px;
   }
-  .manifesto1 {
+  .manifestoCont1 {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .manifestoCont1 .manifesto1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -578,7 +618,15 @@ footer .fText {
     width: 100%;
     height: 80%;
   }
-  .manifesto2 {
+  .manifestoCont2 {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .manifestoCont2 .manifesto2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -671,10 +719,6 @@ footer .fText {
     border-radius: 7px;
     background-color: black;
   }
-  main .imgIndex .colMobile .imgMobile {
-    width: 100%;
-    height: 15rem;
-  }
   .quienes1 {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -720,27 +764,6 @@ footer .fText {
     font-weight: 400;
     color: aliceblue;
     font-size: x-large;
-  }
-}
-@media (min-width: 992px) {
-  main .imgIndex .colMobile .imgMobile {
-    display: none;
-  }
-  main .imgIndex .imgSize {
-    width: 100%;
-    height: 100%;
-  }
-  main .imgIndex .imgSize1 {
-    width: 95%;
-    height: 25%;
-  }
-  main .imgIndex .imgSize2 {
-    width: 95%;
-    height: 18.5rem;
-  }
-  main .imgIndex .sizeServ {
-    width: 50%;
-    height: 70%;
   }
 }
 /*desktop*/
@@ -803,97 +826,5 @@ footer .fText {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-  }
-  main .imgIndex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  main .imgIndex .columna1 {
-    width: 43rem;
-    height: 100%;
-  }
-  main .imgIndex .columna1 .sizeImg {
-    width: 100%;
-    height: 27rem;
-  }
-  main .imgIndex .columna2 {
-    width: 15rem;
-    height: 27.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  main .imgIndex .columna2 .sizeImg2 {
-    width: 100%;
-    height: 8.7rem;
-    background-image: url(../img/fondoP.jpg);
-  }
-  main .imgIndex .columna2 .info {
-    width: 100%;
-    height: 8.7rem;
-    background-color: rgba(0, 0, 0, 0.869);
-    opacity: 0;
-    -webkit-transition: opacity 0.4s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  main .imgIndex .columna2 .sizeImg2:hover .info {
-    opacity: 2;
-  }
-  main .imgIndex .columna3 {
-    width: 25rem;
-    height: 27.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  main .imgIndex .columna3 .sizeImg3 {
-    width: 100%;
-    height: 18rem;
-    background-image: url(../img/fondoP.jpg);
-  }
-  main .imgIndex .columna3 .info2 {
-    width: 100%;
-    height: 18rem;
-    background-color: rgba(0, 0, 0, 0.869);
-    opacity: 0;
-    -webkit-transition: opacity 0.4s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  main .imgIndex .columna3 .sizeImg3:hover .info2 {
-    opacity: 2;
-  }
-  main .imgIndex .columna3 .sizeImg4 {
-    width: 100%;
-    height: 8.7rem;
-  }
-  main .imgIndex .columna3 .sizeImg4 .sizeLogo {
-    width: 45%;
-    height: 100%;
-  }
-  main .imgIndex .nameIndex {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    color: aliceblue;
-    font-size: x-large;
-  }
-}
-@media (min-width: 1200px) {
-  main .imgIndex .imgSize2 {
-    width: 95%;
-    height: 23.5rem;
-  }
-}
-@media (min-width: 1300px) {
-  main .imgIndex .imgSize2 {
-    width: 95%;
-    height: 25.5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */

@@ -97,6 +97,18 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
+         
+        .manifesto{
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: 80%;
+            background-color: rgba(128, 128, 128, 0.059);
+            border-radius: 5px;
+        }
         
     }
     
@@ -108,6 +120,14 @@
         justify-content: space-around;
         align-items: flex-start;
         gap: 1rem;
+        .manifesto1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            height: 80%;
+        }
     }
     
     .manifestoCont2{
@@ -117,36 +137,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-end;
-    }
-    
-    .manifesto{
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        height: 80%;
-        background-color: rgba(128, 128, 128, 0.059);
-        border-radius: 5px;
-    }
-    
-    .manifesto1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        height: 80%;
-    }
-    
-    .manifesto2{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        height: 80%;
+        .manifesto2{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            height: 80%;
+        }
     }
     
     .letra{
@@ -253,17 +251,7 @@
         border-radius: 7px;
         background-color: black;
     }
-    
-    main{
-        .imgIndex{
-            .colMobile{
-                .imgMobile{
-                    width: 100%;
-                    height: 15rem;
-                }
-            }
-        }
-    }
+
 
     .quienes1{
         font-family: 'Poppins', sans-serif;
@@ -321,41 +309,3 @@
     }
 }
 
-@media (min-width:992px){
-   
-    main{
-        .imgIndex{
-            
-            .colMobile{
-                
-                .imgMobile{
-                    display: none;
-                }
-            
-            }
-           
-            .imgSize{
-                width: 100%;
-                height: 100%;
-            }
-                
-            .imgSize1{
-                width: 95%;
-                height: 25%;
-            }
-            
-            .imgSize2{
-                width: 95%;
-                height: 18.5rem;
-                
-            }
-            
-            .sizeServ{
-                width: 50%;
-                height: 70%;
-            }
-        
-        }
-    }
-
-}

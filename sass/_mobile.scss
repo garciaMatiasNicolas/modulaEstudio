@@ -169,7 +169,17 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    
+    .manifesto{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(128, 128, 128, 0.059);
+        border-radius: 5px;
+    }
 }
 
 .manifestoCont1{
@@ -180,6 +190,15 @@ main{
     justify-content: space-around;
     align-items: flex-start;
     gap: 1rem;
+    .manifesto1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+    
+    }
 }
 
 .manifestoCont2{
@@ -189,7 +208,17 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+    .manifesto2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 80%;
+    
+    }
 }
+
 .manifest{
     display: flex;
     width: 100%;
@@ -255,38 +284,6 @@ main{
     opacity: 2;
 }
 
-.manifesto{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    height: 80%;
-    background-color: rgba(128, 128, 128, 0.059);
-    border-radius: 5px;
-}
-
-.manifesto1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    height: 80%;
-
-}
-
-.manifesto2{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    height: 80%;
-
-}
-
 .contenedor{
     display: flex;
     flex-direction: column;
@@ -321,6 +318,59 @@ main{
     align-items: flex-start;
  
 }
+
+.imgSize{
+    width: 100%;
+    height: 30%;
+}
+
+.sizeImg3{
+    width: 95% ;
+    height: 66% ;
+    background-image: url(../img/inicio1.jpg);
+    background-size: 100% 100% ;
+}
+
+.info2{
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.869);
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sizeImg3:hover .info2{
+    opacity: 2;
+}
+
+    .sizeImg2{
+        width: 100%;
+        height: 32%;
+        background-image: url(../img/fondoP.jpg);
+        background-size: 100% 100% ;
+    }
+
+    .info{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.869);
+        opacity: 0;
+        -webkit-transition: opacity 0.4s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .sizeImg2:hover .info{
+        opacity: 2;
+    }
+   
+
 
 .parrafo{
     width: 90%;
