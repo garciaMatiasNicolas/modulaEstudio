@@ -259,7 +259,7 @@ main {
 }
 
 .rowMobile {
-  width: 104.5%;
+  width: 105%;
   height: 110%;
 }
 .rowMobile .imgMobile {
@@ -754,6 +754,10 @@ footer .fText {
   }
   .sizeImg2:hover .info {
     opacity: 2;
+  }
+  .imgSize {
+    width: 100%;
+    height: 33%;
   }
   footer .fP {
     font-family: "Poppins", sans-serif;
