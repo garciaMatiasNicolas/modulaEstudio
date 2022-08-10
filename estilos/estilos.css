@@ -16,8 +16,8 @@
   margin-right: 3.5%;
 }
 .navStyle .size {
-  width: 12rem;
-  height: 11rem;
+  width: 10rem;
+  height: 9rem;
 }
 .navStyle .size2 {
   width: 8rem;
@@ -476,6 +476,10 @@ footer .fText {
 
 /*tablet*/
 @media (min-width: 500px) {
+  .navStyle .size {
+    width: 12rem;
+    height: 11rem;
+  }
   .navStyle .togglerStyle {
     width: 15rem;
   }
